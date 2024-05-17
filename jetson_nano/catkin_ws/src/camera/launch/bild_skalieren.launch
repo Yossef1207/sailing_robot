@@ -1,0 +1,6 @@
+<launch>
+  <node name="camera_subscriber" pkg="camera" type="bild_skalieren.py" output="screen">
+    <remap from="/camera1/image_raw" to="/camera1/image_raw"/>
+    <remap from="/camera2/image_raw" to="/camera2/image_raw"/>
+  </node>
+</launch>

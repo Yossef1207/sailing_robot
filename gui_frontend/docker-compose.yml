@@ -1,0 +1,22 @@
+version: "3.4"
+services:
+  ganache:
+    build:
+      context: .
+      target: ganache
+    ports:
+      - 8545:8545
+
+  truffle:
+    build:
+      context: .
+      target: truffle
+    ports:
+      - 3000:3000
+      - 3001:3001
+    depends_on:
+      - ganache
+    volumes:
+      - .:/home/app
+      - /home/app/node_modules
+

@@ -1,0 +1,5 @@
+mavros
+rospy
+dronekit
+pyserial
+opencv-python

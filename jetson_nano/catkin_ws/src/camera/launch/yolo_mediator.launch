@@ -1,0 +1,21 @@
+<launch>
+  <arg name="frame_slice" default="right" doc="[left, right] camera for object detection" />
+  <arg name="scale_factor" default="1.0" doc="Factor to scale frame by" />
+  <arg name="calib" default="true" doc="Use calibrated camera frame" />
+  <arg name="log_detection" default="false" doc="Print YOLO's detections with bounding box to terminal" />
+  <arg name="thresh" default="0.3" doc="Probability threshold for log_detection in range [0, 1]" />
+  <arg name="verbose" default="true" doc="Verbose output" />
+  <param name="frame_slice" value="$(arg frame_slice)" type="str" />
+  <param name="scale_factor" value="$(arg scale_factor)" type="double" />
+  <param name="calib" value="$(arg calib)" type="bool" />
+  <param name="log_detection" value="$(arg log_detection)" type="bool" />
+  <param name="thresh" value="$(arg thresh)" type="double" />
+  <param name="verbose" value="$(arg verbose)" type="bool" />
+
+  <node
+    pkg="camera"
+    type="yolo_mediator.py"
+    name="yolo_mediator"
+    output="screen"
+    />
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+  <!-- Kameratopics anpassen -->
+   <node pkg="camera" type="stereo_final.py" name="stereo_vision_node" output="screen">
+       <remap from="/camera1/image_raw" to="/camera1/image_raw"/>
+       <remap from="/camera2/image_raw" to="/camera2/image_raw"/>
+       <param name="min_disp" type="int" value="2"/>
+       <param name="num_disp" type="int" value="128"/>
+  </node>
+</launch>

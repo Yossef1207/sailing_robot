@@ -1,0 +1,27 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 214, 252);
+  color: #495057;
+  text-align: left;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.p-divider-solid.p-divider-horizontal:before {
+  border-top-style: solid !important;
+}
+.p-divider-dashed.p-divider-horizontal:before {
+  border-top-style: dashed !important;
+}
+.p-divider-solid.p-divider-vertical:before {
+  border-left-style: solid !important;
+}

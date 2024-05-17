@@ -1,0 +1,78 @@
+These are our comands for the project.
+May they are use full to you.
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+//open gitlab
+git clone https://collaborating.tuhh.de/c00mtec3/et4-2022.git
+
+git add .
+git commit -m "commit message"
+git push origin master
+
+git pull origin master
+
+//compile code //first compiling second for uploading
+cd et4-2022/apm_boat/APMboat
+ sh makeHex.sh
+
+cd et4-2022/apm_boat/APMboat
+ sh uploadHexToBoat.sh 192.168.0.100
+
+//conect to the raspi+AMP and open dronekid:
+ssh ubuntu@192.168.0.100
+mtecsail
+python 
+import dronekit as dk
+apm = dk.connect('/dev/ttyACM0', wait_ready=True, baud=115200)
+
+//-> now you can exicute these comands
+apm.channels.overrides['6']=1300
+apm.channels.overrides['5']=1400
+apm.parameters['cam_yaw_target'] = 123	//set parameter
+
+print("camera_roll_min",apm.parameters['camera_roll_min'])	//for printing the parameter
+print("cam_yaw_target",apm.parameters['cam_yaw_target'])
+apm.parameters['RC6_FUNCTION']=-1    //for switching the servo output to the comand of the c++ code
+apm.parameters['RC6_FUNCTION']=1    // for switching the servo output to the comand of the comd window by using  "apm.channels.overrides['6']=1300"
+print(apm.heading)						//zum Kompass Winkel anzeigen
+strg + D //exit
+
+//für variable ausgeben(in g.sail_ max setzen)
+ssh ubuntu@192.168.0.100 
+mtecsail
+python 
+import dronekit as dk
+apm = dk.connect('/dev/ttyACM0', wait_ready=True, baud=115200)
+print("input Winkel: ",apm.parameters['sail_max'])			//working
+print("error: ",apm.parameters['sail_min'])						//at that state not working
+
+//use full comds for linux
+lsblk					//show all usb atatched
+ls						//alles datein im Odner anzeigen
+mkdir 					//neuen Ordner erstellen 
+rm -r *					//empty ordner 
+nano filename.txt		//opens a file editor
+scp <source> <destination>	//coppy file
+
+
+
+//Start cam logging in the raspi:
+ssh ubuntu@192.168.0.100
+mtecsail
+cd  APMboat/scripts/
+python CamLogProcess.py 	//start
+strg + C  						//stop
+
+//move the cam logs to the usb
+ssh ubuntu@192.168.0.100 
+mtecsail
+sudo  mkdir /media/usb
+sudo mount /dev/sda1 /media/usb -o uid=ubuntu,gid=ubuntu
+sudo mv /home/ubuntu/APMboat/scripts/log/* /media/usb/log/
+sudo umount /media/usb
+
+//alternativly move daa to virtual marshine (slow for huge data amounds)
+scp ubuntu@192.168.0.100:/home/ubuntu/APMboat/scripts/log/* /home/developer/		//Bilder von boot holen
+mtecsail
+
+

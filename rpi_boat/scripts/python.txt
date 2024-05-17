@@ -1,0 +1,475 @@
+import cv2
+cap = cv2.VideoCapture(0)
+r,f = cap.read()
+cv2.imwrite('test.jpg')
+cv2.imwrite('test.jpg',f)
+cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(-1)
+cap = cv2.VideoCapture(2)
+cap = cv2.VideoCapture(3)
+cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0 + cvs.CAP_DSHOW)
+cap = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+r,f = cap.read()
+cv2.imwrite('test.jpg',f)
+    video = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+    # video = cv2.VideoCapture(0)
+    width = 2560
+    high = 720
+    mid = width // 2
+    video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+    video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+    w = video.get(cv2.CAP_PROP_FRAME_WIDTH)
+    h = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    while True:
+        ret, frame = video.read()
+        cv2.imshow("img", frame)
+        cv2.waitKey(10)
+        left_img = frame[:, :mid]
+        right_img = frame[:, mid:]
+        cv2.imshow("left_img", left_img)
+        cv2.imshow("right_img", right_img)
+video = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+w = video.get(cv2.CAP_PROP_FRAME_WIDTH)
+h = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',rigth_img)
+video = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+w = video.get(cv2.CAP_PROP_FRAME_WIDTH)
+h = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',rigth_img)
+video = cv2.VideoCapture(0 + cv2.CAP_DSHOW)
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+print cv2.CAP_DSHOW
+print(cv2.CAP_DSHOW)
+video.getBackendName()
+video = cv2.VideoCapture(0)
+video.getBackendName()
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+video.get(cv2.CAP_PROP_FRAME_WIDTH)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',rigth_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+video.get(CAP_PROP_FPS)
+video.get(cv2.CAP_PROP_FPS)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+video = cv2.VideoCapture(0)
+width = 2560
+high = 720
+mid = width // 2
+exit()
+video = cv2.VideoCapture(0)
+width = 2560
+high = 720
+mid = width // 2
+exit()
+import cv2
+video = cv2.VideoCapture(0)
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+w = video.get(cv2.CAP_PROP_FRAME_WIDTH)
+h = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+exit()
+from dronekit import connect
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=115200)
+vehicle.mode='MANUAL'
+vehicle.mode
+print vehicle.mode
+print(vehicle.mode)
+vehicle.mode='MANUAL'
+print(vehicle.mode)
+vehicle.parameters['TARGET_MODE'] = 1
+print(vehicle.mode)
+vehicle.mode='MANUAL'
+vehicle.mode='AUTO'
+vehicle.mode='STEERING'
+vehicle.parameters['TARGET_MODE'] = 2
+vehicle.parameters['TARGET_MODE']
+print(" Autopilot Firmware version: %s" % vehicle.version)
+print(" Global Location: %s" % vehicle.location.global_frame)
+print(" Attitude: %s" % vehicle.attitude)
+print(" Heading: %s" % vehicle.heading)
+vehicle.mode
+print(vehicle.mode)
+vehicle.parameters['MODE'] = 'MANUAL'
+vehicle.parameters['MODE'] = 0
+vehicle.mode='MANUAL'
+vehicle.mode='LEARNING'
+exit()
+from dronekit import connect
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=115200)
+print(vehicle.mode)
+vehicle.mode='MANUAL'
+print(vehicle.mode)
+vehicle.mode='MANUAL'
+print(vehicle.mode)
+exit()
+from dronekit import connect
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=115200, use_native=True)
+exit
+exit(9
+exit()
+cv2.imwrite('test_right.jpg',right_img)			
+import readline; print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))
+
+
+#!/bin/python
+
+import numpy as np
+import cv2
+from dronekit import connect
+import time
+from multiprocessing import Process, Lock
+
+def f(l, i):
+    l.acquire()
+    try:
+        print('hello world', i)
+    finally:
+        l.release()
+
+if __name__ == '__main__':
+    lock = Lock()
+
+    for num in range(10):
+        Process(target=f, args=(lock, num)).start()
+
+
+milliseconds = int(round(time.time() * 1000))
+print(milliseconds)
+
+
+
+
+video = cv2.VideoCapture(0)
+width = 2560
+high = 720
+mid = width // 2
+video.set(cv2.CAP_PROP_FRAME_WIDTH, width)
+video.set(cv2.CAP_PROP_FRAME_HEIGHT, high)
+w = video.get(cv2.CAP_PROP_FRAME_WIDTH)
+h = video.get(cv2.CAP_PROP_FRAME_HEIGHT)
+ret, frame = video.read()
+left_img = frame[:, :mid]
+right_img = frame[:, mid:]
+cv2.imwrite('test_all.jpg',frame)
+cv2.imwrite('test_left.jpg',left_img)
+cv2.imwrite('test_right.jpg',right_img)
+exit()
+
+
+
+cfg = np.loadtxt('boat.cfg')
+
+vehicle = connect('/dev/ttyACM0', wait_ready=True, baud=115200, use_native=False)
+
+vehicle.parameters['RUDDER_MID'] = cfg[0]
+print("RUDDER_MID",vehicle.parameters['RUDDER_MID'])
+
+vehicle.parameters['SAIL_MID'] = cfg[1]
+print("SAIL_MID",vehicle.parameters['SAIL_MID'])
+
+vehicle.mode = 'MANUAL'
+print(vehicle.mode)
+
+class C(P):
+    def __init__(self, c, *args):
+        super(C, self).__init__(*args)
+        self.c = c
+
+obj = C(3, 1, 2)
+print(obj.a, obj.b, obj.c) # 1 2 3
+
+    [python]
+
+from multiprocessing import sharedctypes
+size = S.size
+shape = S.shape
+S.shape = size
+S_ctypes = sharedctypes.RawArray('d', S)
+S = numpy.frombuffer(S_ctypes, dtype=numpy.float64, count=size)
+S.shape = shape
+
+[/python]
+
+Now we can send S_ctypes and shape to a child process in multiprocessing, and convert it back to a numpy array in the child process as follows:
+
+[python]
+
+from numpy import ctypeslib
+S = ctypeslib.as_array(S_ctypes)
+S.shape = shape
+
+[/python] 
+
+
+
+
+
+
+
+>>> print(apm.channels)
+{'1': 1498, '3': 900, '2': 1499, '5': 1553, '4': 1499, '7': 1499, '6': 912, '8': 1498}
+>>> print(apm.channels.overrides)
+{}
+>>> 
+>>> 
+>>> print(apm.keys())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Vehicle' object has no attribute 'keys'
+>>> print(apm.capabilities)
+<dronekit.Capabilities instance at 0xffff9ecb8d70>
+>>> print(apm.channels.keys())
+['1', '3', '2', '5', '4', '7', '6', '8']
+>>> print(apm.attitude)
+Attitude:pitch=0.0209979657084,yaw=1.20043003559,roll=-0.0517709888518
+>>> print(apm.battery)
+Battery:voltage=0.0,current=None,level=None
+>>> print(apm.channels)
+{'1': 1498, '3': 900, '2': 1499, '5': 1554, '4': 1498, '7': 1499, '6': 911, '8': 1499}
+>>> print(apm.groundspeed)
+0.0
+>>> print(apm.heading)
+68
+>>> print(apm.location)
+<dronekit.Locations object at 0xffff9ec9b8d0>
+>>> print(apm.location.global_frame)
+LocationGlobal:lat=0.0,lon=0.0,alt=10635.04
+>>> print(apm.location.local_frame)
+LocationLocal:north=None,east=None,down=None
+>>> print(apm.location.global_relative_frame)
+LocationGlobalRelative:lat=0.0,lon=0.0,alt=-0.28
+
+
+apm.battery
+apm.attitude
+apm.channels
+apm.channels.overrides
+apm.groundspeed
+apm.heading
+apm.location.global_frame
+apm.location.global_relative_frame
+
+[apm.battery,apm.attitude,apm.channels,apm.channels.overrides,apm.groundspeed,apm.heading,apm.location.global_frame,apm.location.global_relative_frame]
+
+str(apm.battery)
+str(apm.attitude)
+str(apm.channels)
+str(apm.channels.overrides)
+str(apm.groundspeed)
+str(apm.heading)
+str(apm.location.global_frame)
+str(apm.location.global_relative_frame)
+
+apm.battery.voltage
+apm.battery.current
+apm.battery.level
+apm.attitude.yaw
+apm.attitude.pitch
+apm.attitude.roll
+apm.channels
+apm.channels.overrides
+apm.groundspeed
+apm.heading
+apm.location.global_frame.lat
+apm.location.global_frame.lon
+apm.location.global_frame.alt
+
+apm.gps_0

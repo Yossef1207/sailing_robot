@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>GUI-IntelligentSystems</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <div class="wrap">
+    <div id="map"></div>
+    
+    </div>
+    <script>
+        let mapOptions = {
+            center: [53.45837649965346, 10.019355703476469],
+            zoom: 16
+        }
+        let map = new L.map('map', mapOptions);
+        let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        map.addLayer(layer);
+
+
+        map.on('click', (event)=> {    
+            L.marker([event.latlng.lat , event.latlng.lng]).addTo(map);
+            var formData = new FormData();
+            formData.append("lo", event.latlng.lat);
+            formData.append("la", event.latlng.lng);
+
+            var request = new XMLHttpRequest();
+            request.open("POST", "http://192.168.0.112:5000/add_target");
+            request.send(formData);
+
+        });
+        
+        //event.latlng.lng;
+    </script>
+    </script>
+    <form action = "http://192.168.0.112:5000/start_route" method = "post">
+    <p><input type = "submit" value = "start route" /></p>
+    </form>
+    <form action = "http://192.168.0.112:5000/reset_route" method = "post">
+    <p><input type = "submit" value = "reset route" /></p>
+    </form>
+    </form>
+    <form action = "http://192.168.0.112:5000/add_target" method = "post">
+    <p>latitude:</p>
+    <p><input type = "text" name = "la" /></p>
+    <p>longitude:</p>
+    <p><input type = "text" name = "lo" /></p>
+    <p><input type = "submit" value = "add target" /></p>
+    </form>
+    <h1>
+        Targets:
+        
+    </h1>
+    <h3>
+        {{ targets }}
+    </h3>
+    
+    <style>        
+        #map{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</body>

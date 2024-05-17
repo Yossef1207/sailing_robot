@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from boat_control import controller_easy
+
+if __name__ == "__main__":
+    controller_easy.init()
+# %%

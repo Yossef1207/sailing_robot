@@ -1,0 +1,8 @@
+setup.py
+src/loggingNode/__init__.py
+src/loggingNode/logging.py
+src/loggingNode.egg-info/PKG-INFO
+src/loggingNode.egg-info/SOURCES.txt
+src/loggingNode.egg-info/dependency_links.txt
+src/loggingNode.egg-info/requires.txt
+src/loggingNode.egg-info/top_level.txt

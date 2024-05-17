@@ -1,0 +1,7 @@
+{
+    "TARGET_MODE": 1,
+    "SERVO_INCREMENT": 200,
+    "TARGET_APPARENT": 2700,
+    "SAIL_ANGLE": 600,
+    "R_SERVO_UPRIGHT": 1
+}

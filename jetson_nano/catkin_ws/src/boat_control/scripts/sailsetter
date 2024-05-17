@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from boat_control import sailSetter2
+
+if __name__ == "__main__":
+    sailSetter2.init_sail()
+# %%

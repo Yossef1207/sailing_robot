@@ -1,0 +1,4 @@
+#!/home/nano/.pyenv/versions/3.6.15/bin/python
+f.write(rospy.get_caller_id() + 'I heard ' +str(nameid)+ str(score)+ str(centerx)+ str(centery)+ str(sizex)+ str(sizey))
+location = "/home/nano/isp-2022/jetson_nano/catkin_ws/src/yolov7_helper/log/text.txt"
+   

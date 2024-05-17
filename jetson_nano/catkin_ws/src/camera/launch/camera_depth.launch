@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="camera" type="camera_depth.py" name="camera_depth_node" output="screen">
+        <remap from="camera/frame_corr_both" to="/camera/frame_corr_both" />
+    </node>
+</launch>

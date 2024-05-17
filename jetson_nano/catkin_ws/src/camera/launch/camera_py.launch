@@ -1,0 +1,13 @@
+<launch>
+  <arg name="sample_rate" default="4.0" doc="Frequency in Hz to publish images from the camera" />
+  <arg name="verbose" default="true" doc="Verbose output" />
+  <param name="sample_rate" value="$(arg sample_rate)" type="double" />
+  <param name="verbose" value="$(arg verbose)" type="bool" />
+
+  <node
+    pkg="camera"
+    type="camera_pub.py"
+    name="camera_pub"
+    output="screen"
+    />
+</launch>

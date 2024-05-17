@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+from loggingNode import logging
+#import loggingNode
+#import inspect
+
+if __name__ == "__main__":
+    #logging.init_logging()
+    #print(inspect.getmembers(loggingNode))
+    logging.init_logging()

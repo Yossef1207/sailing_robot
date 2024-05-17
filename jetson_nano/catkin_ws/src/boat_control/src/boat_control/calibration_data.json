@@ -1,0 +1,11 @@
+{
+    "RUDDER_MIN": 1400,
+    "RUDDER_MID": 1100,
+    "RUDDER_MAX": 800,
+    "SAIL_MIN": 1000,
+    "SAIL_MID": 1350,
+    "SAIL_MAX": 1700,
+    "WIND_MIN": 902,
+    "WIND_MID": 904,
+    "WIND_MAX": 1982
+}

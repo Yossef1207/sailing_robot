@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from boat_control import rudder
+
+if __name__ == "__main__":
+
+    rudder.init_rudder()

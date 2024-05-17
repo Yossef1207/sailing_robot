@@ -1,0 +1,20 @@
+<launch>
+  <node
+    pkg="camera"
+    type="camera_pub.py"
+    name="camera_pub"
+    output="screen"
+  />
+  <node
+    pkg="camera"
+    type="camera_corr.py"
+    name="camera_corr"
+    output="screen"
+  />
+  <!--<node
+    pkg="camera"
+    type="camera_sub.py"
+    name="camera_sub"
+    output="screen"
+  />-->
+</launch>
